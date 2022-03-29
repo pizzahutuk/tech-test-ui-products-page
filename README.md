@@ -1,46 +1,44 @@
-# Getting Started with Create React App
+# PHDV Live coding - frontend
+Welcome to the live coding test for PHDV. This repo contains an extremely basic mock up of our products page. The theory was that, instead of expecting candidates to waste time creating their own app setup and write some features completely from scratch, we'd like to give candidates an experience of adding features to an existing codebase. We feel this better mimics a developer's day to day and also means you spend less time with the fiddly bits during the test.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+On that note, the repo has been created using create-react-app, so the build should be fairly generic and an unimportant detail to the output of the test.
 
-## Available Scripts
+# Getting setup
 
-In the project directory, you can run:
+You should be able to run the following commands to get started:
 
-### `yarn start`
+```
+nvm use
+yarn
+yarn start
+```
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+# Description of repo
+`data` - Some mock data for products
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+`features` - Probably the most important directory as it is where all the functionality is implemnented
 
-### `yarn test`
+`layout` - This directory can be completely ignored for the purposes of the test
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+`services` - Contains a mock api client
 
-### `yarn build`
+`types` - Common TypeScript definitions for some of the objects we use throughout the codebase
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+# Tasks
+The tasks have been ordered in terms of easiest to hardest. You don't need to complete them all and feel free to say things like "If I had more time, then I'd do it this way"
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+# 1. Warming up:
+By default, the prices are showing as e.g. `£6`, in the real world this price would typically show as `£6.00`
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Write some code to show prices as `£6.00` wherever they're rendered on the site. 
 
-### `yarn eject`
+# 2. A bit of React:
+If you look in the data directory, we can see that there is a Pizza product available, but it isn't rendering. The second task is to get the Pizza rendering, including showing the extra information on the Pizza object
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+# 3. More challenging: state management
+Add a product to basket, feel free to do this any way you like, such as:
+- Callbacks
+- HOCs
+- Redux
+- context API 
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).

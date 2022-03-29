@@ -1,9 +1,9 @@
 import React from 'react';
-import {Product} from "../../../types/products";
+import {BaseProduct} from "../../../types/products";
 import './Product.css';
 
 type Props = {
-  product: Product
+  product: BaseProduct
 }
 const Side = ({product}: Props) => {
   return <div className='Product'>

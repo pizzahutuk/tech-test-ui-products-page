@@ -11,7 +11,6 @@ function App() {
         <div className="App-products"><ProductPage /></div>
         <div className="App-cart"><Cart/></div>
       </div>
-
     </div>
   );
 }

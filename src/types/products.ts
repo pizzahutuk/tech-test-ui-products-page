@@ -6,11 +6,28 @@ export enum ProductType {
   DESSERT = 'dessert'
 }
 
-export type Product = {
+export type BaseProduct = {
   title: string;
   type: ProductType;
   price: Price;
   image: string;
 }
+
+export type Pizza = BaseProduct & {
+  type: ProductType.PIZZA
+  sizes: string[]
+}
+
+export type Side = BaseProduct & {
+  type: ProductType.SIDE
+
+}
+
+export type Dessert = BaseProduct & {
+  type: ProductType.DESSERT
+
+}
+
+export type AnyProduct = Dessert | Pizza | Side
 
 

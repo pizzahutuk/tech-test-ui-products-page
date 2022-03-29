@@ -1,9 +1,9 @@
 import {Price} from "./price";
-import {Product} from "./products";
+import {AnyProduct} from "./products";
 
 export type LineItem = {
   lineItemPrice: Price
-  lineItemProductData: Product
+  lineItemProductData: AnyProduct
 }
 
 export type Cart = {
