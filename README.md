@@ -1,5 +1,7 @@
-# PHDV Live coding - frontend
-Welcome to the live coding test for PHDV. This repo contains an extremely basic mock up of our products page. The theory was that, instead of expecting candidates to waste time creating their own app setup and write some features completely from scratch, we'd like to give candidates an experience of adding features to an existing codebase. We feel this better mimics a developer's day to day and also means you spend less time with the fiddly bits during the test.
+# PHDV Take home test - frontend
+Please note, this take home test is _not_ compulsory. If you would prefer to do a live coding exercise instead, please just let us know!
+
+Welcome to the coding test for PHDV. This repo contains an extremely basic mock up of our products page. The theory was that, instead of expecting candidates to waste time creating their own app setup and write some features completely from scratch, we'd like to give candidates an experience of adding features to an existing codebase. We feel this better mimics a developer's day to day and also means you spend less time with the fiddly bits during the test.
 
 On that note, the repo has been created using create-react-app, so the build should be fairly generic and an unimportant detail to the output of the test.
 
